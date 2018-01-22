@@ -1,0 +1,2043 @@
+22-Jan-2018 12:15:00.134 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+22-Jan-2018 12:15:00.134 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+22-Jan-2018 12:39:37.258 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\<|^\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\<|^\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 12:40:22.765 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token(s), misplaced construct(s)
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, delete these tokens
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+String literal is not properly closed by a double-quote
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token(s), misplaced construct(s)
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, delete these tokens
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on tokens, Expression expected instead
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+String literal is not properly closed by a double-quote
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\\<|^\\?]+?lb=\"([^\\"]+?)\" rc=\"([^\\"]+?)"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\W]+<error>[^\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 12:41:15.316 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\<|^\?]+?lb="([^\"]+?)" rc="([^\"]+?)"[^\<|^\?]+?>[\W]+<assertionResult>[\W]+<name>Response Assertion</name>[\W]+<failure>[^\<|^\?]+?</failure>[\W]+<error>[^\<|^\?]+?</error>[\W]+<failureMessage>([^\<|^\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("<httpSample[^\<|^\?]+?lb="([^\"]+?)" rc="([^\"]+?)"[^\<|^\?]+?>[\W]+<assertionResult>[\W]+<name>Response Assertion</name>[\W]+<failure>[^\<|^\?]+?</failure>[\W]+<error>[^\<|^\?]+?</error>[\W]+<failureMessage>([^\<|^\?]+?)</failureMessage>");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 12:43:15.015 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("""<httpSample[^\<|^\?]+?lb="([^\"]+?)" rc="([^\"]+?)"[^\<|^\?]+?>[\W]+<assertionResult>[\W]+<name>Response Assertion</name>[\W]+<failure>[^\<|^\?]+?</failure>[\W]+<error>[^\<|^\?]+?</error>[\W]+<failureMessage>([^\<|^\?]+?)</failureMessage>""");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/GetErrorFile.jsp]
+Invalid escape sequence (valid ones are  \b  \t  \n  \f  \r  \"  \'  \\ )
+12:     wr1.newLine();
+13: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"));
+14: 	Pattern errorPattern = Pattern.compile("httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"");
+15: 	Pattern errorPatternAss = Pattern.compile("""<httpSample[^\<|^\?]+?lb="([^\"]+?)" rc="([^\"]+?)"[^\<|^\?]+?>[\W]+<assertionResult>[\W]+<name>Response Assertion</name>[\W]+<failure>[^\<|^\?]+?</failure>[\W]+<error>[^\<|^\?]+?</error>[\W]+<failureMessage>([^\<|^\?]+?)</failureMessage>""");
+16: 	while((line = br.readLine()) != null) {
+17:                 Matcher m = errorPattern.matcher(line);
+18:                 Matcher m1 = errorPatternAss.matcher(line);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 13:13:39.836 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+19: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+20: 	@Deprecated
+
+
+An error occurred at line: [21] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+18: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+19: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+20: 	@Deprecated
+21: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [24] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+21: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+
+
+An error occurred at line: [25] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+28: 				
+
+
+An error occurred at line: [26] in the jsp file: [/StackTrace.jsp]
+resMsg cannot be resolved to a variable
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+28: 				
+29: 				<pre>
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+resMsg cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [37] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+34: 			}
+35: 			
+36: 				out.close();
+37: 				jtlFile.close();
+38: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+19: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+20: 	@Deprecated
+
+
+An error occurred at line: [21] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+18: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+19: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+20: 	@Deprecated
+21: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [24] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+21: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+
+
+An error occurred at line: [25] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+22: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+28: 				
+
+
+An error occurred at line: [26] in the jsp file: [/StackTrace.jsp]
+resMsg cannot be resolved to a variable
+23: 			while (matcher.find()) {
+24: 				reqName = matcher.group(1);
+25: 				resCode = matcher.group(2);
+26: 				resMsg = matcher.group(3);
+27: 				%>
+28: 				
+29: 				<pre>
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+27: 				%>
+28: 				
+29: 				<pre>
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+reqName cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+resCode cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [33] in the jsp file: [/StackTrace.jsp]
+resMsg cannot be resolved to a variable
+30: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+31: 				</pre>
+32: 				<%
+33: 				out.write(reqName+","+resCode+","+resMsg);
+34: 			}
+35: 			
+36: 				out.close();
+
+
+An error occurred at line: [37] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+34: 			}
+35: 			
+36: 				out.close();
+37: 				jtlFile.close();
+38: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 13:14:51.524 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String reqName, resCode, resMsg;
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+
+
+An error occurred at line: [22] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+21: 	@Deprecated
+22: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+23: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+24: 			while (matcher.find()) {
+25: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [38] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+35: 			}
+36: 			
+37: 				out.close();
+38: 				jtlFile.close();
+39: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String reqName, resCode, resMsg;
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+
+
+An error occurred at line: [22] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+21: 	@Deprecated
+22: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+23: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+24: 			while (matcher.find()) {
+25: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [38] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+35: 			}
+36: 			
+37: 				out.close();
+38: 				jtlFile.close();
+39: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:30:53.506 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String reqName, resCode, resMsg;
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+
+
+An error occurred at line: [22] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+21: 	@Deprecated
+22: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+23: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+24: 			while (matcher.find()) {
+25: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [38] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+35: 			}
+36: 			
+37: 				out.close();
+38: 				jtlFile.close();
+39: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(9047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+
+
+An error occurred at line: [17] in the jsp file: [/StackTrace.jsp]
+Duplicate local variable out
+14: 		        						.build();
+15: 	
+16: 	File jtlFile = new File("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl");
+17: 	FileWriter out = new FileWriter("StackTrace.csv");
+18: 	String reqName, resCode, resMsg;
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+
+
+An error occurred at line: [22] in the jsp file: [/StackTrace.jsp]
+LargeText cannot be resolved to a type
+19: 	String regex1 = "httpSample.+?lb=\"(.+?)\" rc=\"([^2|^3].+?)\" rm=\"(.+?)\"";
+20: 	String regex2 = "<httpSample[^\\<|^\\?]+?lb=\"([^\\\"]+?)\" rc=\"([^\\\"]+?)\"[^\\<|^\\?]+?>[\\W]+<assertionResult>[\\W]+<name>Response Assertion</name>[\\W]+<failure>[^\\<|^\\?]+?</failure>[\\W]+<error>[^\\<|^\\?]+?</error>[\\W]+<failureMessage>([^\\<|^\\?]+?)</failureMessage>";
+21: 	@Deprecated
+22: 			final LargeText input = factory.fromPath(jtlFile.toPath());
+23: 			Matcher matcher = Pattern.compile(regex1,Pattern.MULTILINE).matcher(input);
+24: 			while (matcher.find()) {
+25: 				reqName = matcher.group(1);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [31] in the jsp file: [/StackTrace.jsp]
+The method print(String) is undefined for the type FileWriter
+28: 				%>
+29: 				
+30: 				<pre>
+31: 					<%=reqName%>            <%=resCode%>            <%=resCode%>
+32: 				</pre>
+33: 				<%
+34: 				out.write(reqName+","+resCode+","+resMsg);
+
+
+An error occurred at line: [38] in the jsp file: [/StackTrace.jsp]
+The method close() is undefined for the type File
+35: 			}
+36: 			
+37: 				out.close();
+38: 				jtlFile.close();
+39: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:29.098 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	String line = null;
+
+
+An error occurred at line: [36] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+33:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+34:                             wr.newLine();
+35:                     } catch (Exception var10) {
+36: 						wr.write(var10);
+37:                     }
+38:                 }
+39:             }
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	String line = null;
+
+
+An error occurred at line: [36] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+33:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+34:                             wr.newLine();
+35:                     } catch (Exception var10) {
+36: 						wr.write(var10);
+37:                     }
+38:                 }
+39:             }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:30.903 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:128)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:59)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:381)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:34.609 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	String line = null;
+
+
+An error occurred at line: [36] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+33:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+34:                             wr.newLine();
+35:                     } catch (Exception var10) {
+36: 						wr.write(var10);
+37:                     }
+38:                 }
+39:             }
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [18] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeText resolves to a package
+
+An error occurred at line: [19] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.LargeTextFactory resolves to a package
+
+An error occurred at line: [20] in the generated java file: [D:\tomcat\foo\work\Catalina\localhost\ROOT\org\apache\jsp\StackTrace_jsp.java]
+Only a type can be imported. com.github.fge.largetext.SizeUnit resolves to a package
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved to a type
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [10] in the jsp file: [/StackTrace.jsp]
+LargeTextFactory cannot be resolved
+7: <%@ page import="com.github.fge.largetext.SizeUnit" %>
+8: 
+9: <%
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+
+
+An error occurred at line: [13] in the jsp file: [/StackTrace.jsp]
+SizeUnit.MiB cannot be resolved to a type
+10: 	final LargeTextFactory factory = LargeTextFactory.newBuilder()
+11: 		        						.setCharset(StandardCharsets.US_ASCII) // either a Charset instance
+12: 		        						.setCharsetByName("windows-1252")      // or by name
+13: 		        						.setWindowSize(2047, SizeUnit.MiB)        // set the window size
+14: 		        						.build();
+15: 	
+16: 	String line = null;
+
+
+An error occurred at line: [36] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+33:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+34:                             wr.newLine();
+35:                     } catch (Exception var10) {
+36: 						wr.write(var10);
+37:                     }
+38:                 }
+39:             }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:35.619 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:128)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:59)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:381)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:36.306 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp] with root cause
+ java.lang.ClassNotFoundException: org.apache.jsp.StackTrace_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:128)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:59)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:159)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:381)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 15:38:51.803 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+23:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+24:                             wr.newLine();
+25:                     } catch (Exception var10) {
+26: 						wr.write(var10);
+27:                     }
+28:                 }
+29:             }
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [26] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (Exception)
+23:                             wr.write(m.group(1).trim() + "," + m.group(2).trim() + "," + m.group(3).trim());
+24:                             wr.newLine();
+25:                     } catch (Exception var10) {
+26: 						wr.write(var10);
+27:                     }
+28:                 }
+29:             }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 18:45:10.272 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Cannot infer type arguments for TreeSet<>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (String, int)
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+31:     wr.close();
+32: %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Cannot infer type arguments for TreeSet<>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+An error occurred at line: [30] in the jsp file: [/StackTrace.jsp]
+The method write(int) in the type BufferedWriter is not applicable for the arguments (String, int)
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s,Collections.frequency(responseCodes, s));
+31:     wr.close();
+32: %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 18:45:38.191 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Cannot infer type arguments for TreeSet<>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Cannot infer type arguments for TreeSet<>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 18:46:18.618 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<String>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+The constructor TreeSet<String>(Arrays.asList(responseCodes)) is undefined
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<String>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<String>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+The constructor TreeSet<String>(Arrays.asList(responseCodes)) is undefined
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<String> responseCodeSet = new TreeSet<String>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Jan-2018 18:46:36.233 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Incorrect number of arguments for type Set<E>; it cannot be parameterized with arguments <>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [27] in the jsp file: [/StackTrace.jsp]
+The method sort(int[]) in the type Arrays is not applicable for the arguments (List<String>)
+24:                 }
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+
+
+An error occurred at line: [28] in the jsp file: [/StackTrace.jsp]
+Incorrect number of arguments for type Set<E>; it cannot be parameterized with arguments <>
+25:             }
+26:             br.close();
+27: 	Arrays.sort(responseCodes);
+28: 	Set<> responseCodeSet = new TreeSet<>(Arrays.asList(responseCodes));
+29: 	for(String s : responseCodeSet)
+30: 	  wr.write(s+","+Collections.frequency(responseCodes, s));
+31:     wr.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

@@ -1,0 +1,57 @@
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png  C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\HitsPerSecond.png --input-jtl C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\bin\Aggregate15jmeter13.jtl  --plugin-type HitsPerSecond
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png  C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\RPC1.png --input-jtl C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\bin\Aggregate15jmeter13.jtl    --plugin-type ResponseCodesPerSecond
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png  C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\Respq1.png --input-jtl C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\bin\Aggregate15jmeter13.jtl  --plugin-type ResponseTimesOverTime  --aggregate-rows yes
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-csv  aggregateResults.csv --input-jtl SSO_SC_2400_JTL_Total_2111217.jtl   --plugin-type AggregateReport
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-csv  C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\Respons111.png --input-jtl C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\bin\Aggregate15jmeter13.jtl   --plugin-type ResponseCodesPerSecond
+
+
+
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png HitsPerSecond.png --input-jtl SSO_SC_2400_JTL_Total_2111217.jtl  --plugin-type HitsPerSecond
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png ResponseCodesPerSecond.png --input-jtl SSO_SC_2400_JTL_Total_2111217.jtl    --plugin-type ResponseCodesPerSecond
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-png  ResponseTimesOverTime.png --input-jtl ResponseCodesPerSecond  --plugin-type ResponseTimesOverTime  --aggregate-rows yes
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-csv  aggregateResults.csv --input-jtl SSO_SC_2400_JTL_Total_2111217.jtl   --plugin-type AggregateReport
+
+java -jar C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\lib\ext\CMDRunner.jar --tool Reporter --generate-csv  C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\Respons111.png --input-jtl C:\Users\saurabhrai\Downloads\apache-jmeter-2.13\bin\Aggregate15jmeter13.jtl   --plugin-type ResponseCodesPerSecond
+
+
+java -jar $8 --tool Reporter --generate-csv $1 --input-jtl $9 --plugin-type AggregateReport
+java -jar $8 --tool Reporter --generate-png $2 --input-jtl $9 --plugin-type ResponseTimesOverTime --width 900 --height 400 --aggregate-rows yes
+java -jar $8 --tool Reporter --generate-png $3 --input-jtl $9 --plugin-type HitsPerSecond --width 900 --height 400 
+java -jar $8 --tool Reporter --generate-png $4 --input-jtl $9 --plugin-type ResponseCodesPerSecond --width 900 --height 400
+#java -jar $8 --tool Reporter --generate-png $5 --input-jtl $9 --plugin-type TimesVsThreads --width 900 --height 400 --aggregate-rows yes
+java -jar $8 --tool Reporter --generate-png $6 --input-jtl $9 --plugin-type ThreadsStateOverTime --width 900 --height 400
+#java -jar $8 --tool Reporter --generate-png $7 --input-jtl $9 --plugin-type LatenciesOverTime --width 900 --height 400 --aggregate-rows yes
+shift
+shift
+shift
+shift
+shift
+#java -jar $3 --tool Reporter --generate-png $5 --input-jtl $4 --plugin-type ThroughputVsThreads --width 900 --height 400 --include-labels CLHM_Launch
+#java -jar $3 --tool Reporter --generate-png $6 --input-jtl $4 --plugin-type ResponseTimesPercentiles --width 900 --height 400 --include-labels CLHM_Launch
+#java -jar $3 --tool Reporter --generate-png $7 --input-jtl $4 --plugin-type ResponseTimesDistribution --width 900 --height 400 --aggregate-rows yes
+#java -jar $3 --tool Reporter --generate-png $8 --input-jtl $4 --plugin-type ThroughputOverTime --width 900 --height 400 --include-labels CLHM_Launch
+java -jar $3 --tool Reporter --generate-png $9 --input-jtl $4 --plugin-type TransactionsPerSecond --width 900 --height 400 --aggregate-rows yes
+shift
+#java -jar $2 --tool Reporter --generate-png $9 --input-jtl $3 --plugin-type BytesThroughputOverTime --width 900 --height 400
+shift
+cp report.css $9
+shift
+shift 
+shift
+shift
+shift 
+shift
+shift
+shift
+shift
+java -jar $7 --tool Reporter --generate-csv $5 --input-jtl $8 --plugin-type SynthesisReport --start-offset $1 --end-offset $2
+java -jar $7 --tool Reporter --generate-csv $6 --input-jtl $8 --plugin-type SynthesisReport --start-offset $3 --end-offset $4
+java -jar $7 --tool Reporter --generate-csv $9 --input-jtl $8 --plugin-type ResponseCodesPerSecond
