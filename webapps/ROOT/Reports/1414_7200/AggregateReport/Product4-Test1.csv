@@ -1,0 +1,14 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth
+HTTP Request: Login Product4,26851,808,463,1381,181,7067,0,3.716126211,3259.619883
+HTTP Request: Login/ Ajax MarkList,26839,13,5,8,3,3019,0,3.720166521,0.658926446
+HTTP Request: Search Assist,20805,45,27,92,6,3069,0,2.893234434,2.262604359
+HTTP Request: Navigate To Subject Guide Search,1098,134,58,263,24,3045,0,0.340371718,3.322542586
+HTTP Request: Navigate To Subject Guide Search / Ajax Marklist,2446,12,5,8,3,1052,0,0.34040786,0.084097881
+HTTP Request: Navigate Topic Finder,1221,153,60,142,15,3061,0,0.170022464,11.5842045
+HTTP Request: Navigate Topic Finder/ Ajax MarkList,1221,11,5,8,3,1051,0,0.170026299,0.04473365
+HTTP Request: Navigate To Advanced Search,7580,164,80,557,35,9072,0,1.054962429,15.20632905
+HTTP Request: Basic Search,9843,492,364,1054,54,4703,0,1.369241219,53.23514222
+HTTP Request: Navigate To Advanced Search / Ajax Marklist,7573,14,5,8,3,3008,0,1.054378385,0.281212456
+HTTP Request: Topic Finder,1221,2522,1956,4049,785,9459,0,0.169973233,140.0810669
+HTTP Request: Basic Search/ Ajax MarkList,9834,12,5,8,3,3010,0,1.369255712,0.288689092
+TOTAL,91029,253,71,334,3,28983,1.14E-06,121.1998835,4349.050029

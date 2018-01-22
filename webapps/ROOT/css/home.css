@@ -1,0 +1,121 @@
+.padLeftZero{
+	padding-left:0px;
+}
+
+.padZero{
+	padding:0px;
+}
+
+.btn{
+      font-size:14px;
+      padding:4px 8px;
+    }
+
+.boldMaker{
+     font-weight:600;
+    }
+
+th{
+    background-color:#ADD8E6;
+  }
+
+#transit{
+    color:#777;
+    cursor:pointer;
+    text-decoration:none;
+    }
+
+#transit:hover{
+     color:white;
+     background-color: #808080;
+     font-weight:700;
+    }
+
+#goTop{
+	cursor:default;
+	float:left;
+}
+
+#noCursor{
+	cursor:default;
+}
+
+.footer{
+	position:fixed;
+	z-index:999999;
+	bottom:0;
+	right:0;
+}
+
+#topAnchor{
+	text-decoration:none;
+}
+
+#topButton{
+	background-color: Transparent;
+	border: none;
+	outline:none;
+}
+
+.prdNameDiv{
+	margin-right:0;
+}
+
+.prdNameCol{
+	position:fixed;
+	background-color:#f8f8f8;
+}
+
+.prdNm{
+	color:#111;
+}
+
+.prdNameCol>ul{
+	list-style:none;
+	padding:0px;
+}
+
+.tabOverallAvg{
+	background-color:#C2B280;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:10px;
+}
+
+.tabFont{
+	font-size:14px;
+}
+
+.tabAvgRes{
+	background-color:#C2B280;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:10px;
+}
+.tabError{
+	background-color:#C2B280;
+	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:10px;
+}
+
+.aggRepProdName{
+	background-color:#46C7C7;
+	margin-bottom:10px;
+	margin-top:25px;
+	border-radius:10px;
+}
+
+.aggRepProdNameColor{
+	color:white;
+}
+
+.aggRepProdButton{
+	background-color: Transparent;
+	border: none;
+	outline:none;
+}
+

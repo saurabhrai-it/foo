@@ -1,0 +1,4 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth
+AONE Direct Link Doc URL,60542,208,187,309,84,9993,0.0,8.40874424956173,139.13998014929507
+OVIC Direct Link Doc URL with hash,60525,588,556,739,14,10352,0.0,8.406630633553686,212.200636212183
+TOTAL,121067,398,376,671,14,10352,0.0,16.812794538449094,351.2856264802868

@@ -1,0 +1,385 @@
+19-Jan-2018 16:04:32.970 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Jan-2018 16:04:32.970 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+19-Jan-2018 16:05:10.700 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Duplicate local variable br
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved to a type
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [12] in the jsp file: [/GetErrorFile.jsp]
+Matcher cannot be resolved to a type
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+14: 					%>
+15: 					<%=m.group(2)%>
+
+
+An error occurred at line: [27] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+24:                         wr.newLine();
+25:                     }
+26:                 } else {
+27:                     errorPattern = Pattern.compile("<httpSample.+?lb=\"(.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+28:                     m = errorPattern.matcher(line);
+29:                     if(m.find()) {
+30:                         try {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Duplicate local variable br
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved to a type
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [12] in the jsp file: [/GetErrorFile.jsp]
+Matcher cannot be resolved to a type
+9: 	BufferedReader br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+14: 					%>
+15: 					<%=m.group(2)%>
+
+
+An error occurred at line: [27] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+24:                         wr.newLine();
+25:                     }
+26:                 } else {
+27:                     errorPattern = Pattern.compile("<httpSample.+?lb=\"(.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+28:                     m = errorPattern.matcher(line);
+29:                     if(m.find()) {
+30:                         try {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+19-Jan-2018 16:05:24.428 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved to a type
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [12] in the jsp file: [/GetErrorFile.jsp]
+Matcher cannot be resolved to a type
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+14: 					%>
+15: 					<%=m.group(2)%>
+
+
+An error occurred at line: [27] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+24:                         wr.newLine();
+25:                     }
+26:                 } else {
+27:                     errorPattern = Pattern.compile("<httpSample.+?lb=\"(.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+28:                     m = errorPattern.matcher(line);
+29:                     if(m.find()) {
+30:                         try {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [9] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+6:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved to a type
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+7:     wr.write("Request,Response_Code,Response_Message");
+8:     wr.newLine();
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+
+
+An error occurred at line: [12] in the jsp file: [/GetErrorFile.jsp]
+Matcher cannot be resolved to a type
+9: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+10: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+11: 	while((line = br.readLine()) != null) {
+12:                 Matcher m = errorPattern.matcher(line);
+13:                 if(m.find()) {
+14: 					%>
+15: 					<%=m.group(2)%>
+
+
+An error occurred at line: [27] in the jsp file: [/GetErrorFile.jsp]
+Pattern cannot be resolved
+24:                         wr.newLine();
+25:                     }
+26:                 } else {
+27:                     errorPattern = Pattern.compile("<httpSample.+?lb=\"(.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+28:                     m = errorPattern.matcher(line);
+29:                     if(m.find()) {
+30:                         try {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+19-Jan-2018 16:06:22.136 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+7:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+8:     wr.write("Request,Response_Code,Response_Message");
+9:     wr.newLine();
+10: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+11: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+12: 	while((line = br.readLine()) != null) {
+13:                 Matcher m = errorPattern.matcher(line);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [10] in the jsp file: [/GetErrorFile.jsp]
+Syntax error on token ";", delete this token
+7:     BufferedWriter wr = new BufferedWriter(new FileWriter("stackTrace.csv",true));
+8:     wr.write("Request,Response_Code,Response_Message");
+9:     wr.newLine();
+10: 	br = new BufferedReader(new FileReader("D:\\1Ne\\SSO_SC_JTL\\SSO_SC_2400_JTL_Total_2111217.jtl"););
+11: 	Pattern errorPattern = Pattern.compile("<httpSample.+?lb=\"[0-9]+ (.+?)\" rc=\"(.+?)\" rm=\"(.+?)\"");
+12: 	while((line = br.readLine()) != null) {
+13:                 Matcher m = errorPattern.matcher(line);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:458)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:389)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:345)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:651)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:501)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:754)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1376)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+19-Jan-2018 16:08:53.375 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+19-Jan-2018 16:08:53.375 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()

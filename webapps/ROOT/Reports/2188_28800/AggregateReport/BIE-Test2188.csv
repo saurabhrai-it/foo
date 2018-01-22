@@ -1,0 +1,6 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth
+Login,23,924,271,2143,186,6224,0.0,2.0411785587504436,51.445205033058215
+Common Ajax Requests,25,143,89,332,35,479,0.0,3.884400248601616,43.01578765926041
+BasicSearch,5,545,848,852,77,853,0.0,1.337613697164259,32.387755400615305
+Basic Search : Ajax,2,1525,1080,1970,1080,1970,1.0,1.0126582278481013,2.2616693037974684
+TOTAL,55,556,250,907,35,6224,0.03636363636363636,3.7709976002742542,67.33400111415838

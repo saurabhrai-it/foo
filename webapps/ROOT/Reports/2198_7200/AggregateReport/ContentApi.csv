@@ -1,0 +1,9 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth
+End Time BSF Sampler,3450,8,7,12,2,245,0.0,0.4795377756230238,0.01873194436027437
+Generate Key URL Request with Location Id,3450,37,2,19,1,3563,0.0,0.4793606745841303,0.09659888304099742
+Search Viewpoints Request,225427,350,129,275,49,21235,0.0,31.308361956313263,109.39487475364459
+Search Reference Request,225322,341,130,273,48,21055,0.0,31.323531169917665,86.9527334560776
+Search Academic Journals Request,225212,375,157,303,59,21248,0.0,31.319441981808716,93.4125311280778
+Retrieve Request with Document Id,9217,720,688,938,307,7116,0.0,1.2866599316061442,69.73465819090896
+Retrieve Request for Full list,9205,351,257,622,122,13458,0.0,1.287212034376742,28.00745750723244
+TOTAL,701283,357,141,324,1,21248,0.0,97.3252464311939,386.57939081161584
