@@ -119,10 +119,11 @@
 				pattern = name+"_(.+)";
 				Pattern patternComplier = Pattern.compile(pattern);
 				Matcher patternMatcher = patternComplier.matcher(fileName);
+				Float testDurationInHour=0.0f;
 				if(patternMatcher.find())
 				{
 					testValue = patternMatcher.group(1);
-					Float testDurationInHour = Float.parseFloat(testValue)/3600;
+					testDurationInHour = Float.parseFloat(testValue)/3600;
 					Float testDurationLeftInSec = Float.parseFloat(testValue)%3600;
 					Float testDurationInMinute = testDurationLeftInSec/60;
 					testTime = String.format("%.00f",testDurationInHour) + " Hr, " + String.format("%.00f",testDurationInMinute) + "Min";
@@ -137,7 +138,7 @@
         <div class="container" style="padding-left:0px;">
           <div class="navbar-header">
             <a href="#" id="goTop" style="cursor:default;"><img src="../../qaLogo.jpg" height="50px" style="float:left;margin-left:-90px;"/></a>
-            <a class="navbar-brand" style="cursor:default;font-size: 14px;" href="#">&nbsp;&nbsp;&nbsp;GALE REPORTS</a>
+            <a class="navbar-brand" style="cursor:default;font-size: 14px;" href="#">&nbsp;&nbsp;&nbsp;SSO/CARES REPORTS</a>
             <a class="navbar-brand" style="cursor:default;font-size: 14px;" href="#">&nbsp;&nbsp;&nbsp;LOAD TEST NUMBER : <%=name%></a>
             <a class="navbar-brand" style="cursor:default;font-size: 14px;" href="#">DURATION : <%=testTime%></a>
           </div>
@@ -342,9 +343,18 @@
                                                               while ((lineOverallSLA = bufferedReaderOverallSLA.readLine()) != null) {
                                                                   if((!lineOverallSLA.startsWith("TOTAL"))&&(!lineOverallSLA.startsWith("sampler_label")))
                                                                   {
+																	     Float tempErrorSLA = 0.0f;
                                                                          dataInLineOverallSLA   = lineOverallSLA.split(",");
-                                                                         errorSLA               = dataInLineOverallSLA[7].replace("%","");
-                                                                         Float tempErrorSLA     = Float.parseFloat(errorSLA)*100;
+																		 if(dataInLineOverallSLA[7].contains("%"))
+																		 {
+																			 errorSLA               = dataInLineOverallSLA[7].replace("%","");
+                                                                             tempErrorSLA     = Float.parseFloat(errorSLA);
+																		 }
+                                                                         else
+																		 {
+																			 errorSLA               = dataInLineOverallSLA[7];
+                                                                             tempErrorSLA     = Float.parseFloat(errorSLA)*100;
+																		 }
                                                                          if(tempErrorSLA>2.0)
                                                                          {
 
@@ -445,8 +455,17 @@
                    String error      = dataInLine[7];
                    String throughput = String.format("%.02f", Float.parseFloat(dataInLine[8]));
                    String kbpersec   = String.format("%.02f", Float.parseFloat(dataInLine[9]));
-                   String errorString=error.replace("%","");
-                   float errorFloat=Float.parseFloat(errorString)*100;
+                   String errorString="";
+				   float errorFloat = 0.0f;
+				   if(error.contains("%"))
+				   {
+				   	 errorString      = error.replace("%","");
+                     errorFloat     = Float.parseFloat(errorString);
+				   }
+                   else
+				   {
+                     errorFloat     = Float.parseFloat(error)*100;
+				   }
                    if(errorFloat>2.0)
                       errorString = "<td style='color:red;font-weight:600;'>"+String.format("%.02f", errorFloat)+"</td>";
                    else
@@ -664,10 +683,9 @@
 						document.getElementById("comparisonTable").innerHTML = this.responseText;
 					}
 				};
-			xhttp.open("POST","GetComparisonTable3.jsp?baselineTest="+baseTest+"&name="+currTest+"&prodType="+prodType,true);
+			xhttp.open("POST","GetComparisonTable.jsp?baselineTest="+baseTest+"&name="+currTest+"&prodType="+prodType,true);
 			xhttp.send();
 			}
-			
 			function getProdType(baseTest,currTest) {
 				xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function() {
@@ -680,8 +698,8 @@
 			}
 			
 			window.onload=function() {
-								getProdType(<%=baselineLoadTestNumber%>,<%=name%>);
-								getCompTable(<%=baselineLoadTestNumber%>,<%=name%>,'Overall');
+								getProdType('<%=baselineLoadTestNumber%>','<%=name%>');
+								getCompTable('<%=baselineLoadTestNumber%>','<%=name%>','Overall');
 							}
 				</script>
 		<%

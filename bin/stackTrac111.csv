@@ -1,0 +1,11 @@
+Response_Code,COUNT
+HTTP_400,27
+HTTP_404,2
+HTTP_408,1
+HTTP_500,253
+HTTP_504,219
+Non HTTP response code: java.net.SocketException,1
+Non HTTP response code: java.net.URISyntaxException,10
+Non HTTP response code: javax.net.ssl.SSLHandshakeException,29
+Non HTTP response code: org.apache.commons.httpclient.NoHttpResponseException,1
+Non HTTP response code: org.apache.http.NoHttpResponseException,15

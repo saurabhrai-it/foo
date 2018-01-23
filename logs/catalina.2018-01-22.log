@@ -89,3 +89,52 @@
 22-Jan-2018 19:18:33.301 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 22-Jan-2018 19:18:33.309 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
 22-Jan-2018 19:18:33.312 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 18423 ms
+22-Jan-2018 19:40:34.105 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.2
+22-Jan-2018 19:41:02.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.2
+22-Jan-2018 19:41:02.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Nov 25 2017 21:08:02 UTC
+22-Jan-2018 19:41:02.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.2.0
+22-Jan-2018 19:41:02.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+22-Jan-2018 19:41:02.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+22-Jan-2018 19:41:02.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+22-Jan-2018 19:41:02.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_102\jre
+22-Jan-2018 19:41:02.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_102-b14
+22-Jan-2018 19:41:02.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+22-Jan-2018 19:41:02.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\tomcat\foo
+22-Jan-2018 19:41:02.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\tomcat\foo
+22-Jan-2018 19:41:02.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\tomcat\foo\conf\logging.properties
+22-Jan-2018 19:41:02.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+22-Jan-2018 19:41:02.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+22-Jan-2018 19:41:02.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+22-Jan-2018 19:41:02.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+22-Jan-2018 19:41:02.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\tomcat\foo
+22-Jan-2018 19:41:02.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\tomcat\foo
+22-Jan-2018 19:41:02.224 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\tomcat\foo\temp
+22-Jan-2018 19:41:02.225 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+22-Jan-2018 19:41:02.227 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+22-Jan-2018 19:41:02.228 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+22-Jan-2018 19:41:03.298 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+22-Jan-2018 19:41:03.585 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+22-Jan-2018 19:41:03.635 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+22-Jan-2018 19:41:03.643 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+22-Jan-2018 19:41:03.647 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+22-Jan-2018 19:41:03.648 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1789 ms
+22-Jan-2018 19:41:03.794 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+22-Jan-2018 19:41:03.794 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.2
+22-Jan-2018 19:41:03.803 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\tomcat\foo\webapps\docs]
+22-Jan-2018 19:41:05.627 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jan-2018 19:41:05.682 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\tomcat\foo\webapps\docs] has finished in [1,878] ms
+22-Jan-2018 19:41:05.683 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\tomcat\foo\webapps\examples]
+22-Jan-2018 19:41:13.977 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jan-2018 19:41:14.045 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\tomcat\foo\webapps\examples] has finished in [8,362] ms
+22-Jan-2018 19:41:14.046 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\tomcat\foo\webapps\host-manager]
+22-Jan-2018 19:41:14.902 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jan-2018 19:41:14.909 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\tomcat\foo\webapps\host-manager] has finished in [863] ms
+22-Jan-2018 19:41:14.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\tomcat\foo\webapps\manager]
+22-Jan-2018 19:41:15.883 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jan-2018 19:41:15.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\tomcat\foo\webapps\manager] has finished in [978] ms
+22-Jan-2018 19:41:15.889 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\tomcat\foo\webapps\ROOT]
+22-Jan-2018 19:41:16.826 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+22-Jan-2018 19:41:16.826 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\tomcat\foo\webapps\ROOT] has finished in [937] ms
+22-Jan-2018 19:41:16.842 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+22-Jan-2018 19:41:16.850 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+22-Jan-2018 19:41:16.852 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 13205 ms

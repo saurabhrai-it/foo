@@ -7,7 +7,7 @@
 	String currDir 				  = (String)session.getAttribute("currDir");
 %>
 <html>
-<body onload="getCompTable(<%=baselineLoadTestNumber%>,<%=currLoadTestNumber%>,"Overall");">
+<body onload="getCompTable('<%=baselineLoadTestNumber%>','<%=currLoadTestNumber%>',"Overall");">
 
 	<script>
 	function getCompTable(baseTest,currTest,prodType) {
@@ -17,12 +17,12 @@
 						document.getElementById("comparisonTable").innerHTML = this.responseText;
 					}
 				};
-			xhttp.open("POST","GetComparisonTable3.jsp?baselineTest="+baseTest+"&name="+currTest+"&prodType="+prodType,true);
+			xhttp.open("POST","GetComparisonTable.jsp?baselineTest="+baseTest+"&name="+currTest+"&prodType="+prodType,true);
 			xhttp.send();
 			}
 	</script>
 	<label class="text-danger">Product : </label>
-					<select onchange="getCompTable(<%=baselineLoadTestNumber%>,<%=currLoadTestNumber%>,this.value)" id="productType" name="productType">
+					<select onchange="getCompTable('<%=baselineLoadTestNumber%>','<%=currLoadTestNumber%>',this.value)" id="productType" name="productType">
 					   <option value="Overall" >Overall</option>
 		<%
 		        String[] tempTestNumList2;

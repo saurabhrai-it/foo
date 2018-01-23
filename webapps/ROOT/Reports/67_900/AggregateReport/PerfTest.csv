@@ -1,0 +1,18 @@
+sampler_label,aggregate_report_count,average,aggregate_report_median,aggregate_report_90%_line,aggregate_report_min,aggregate_report_max,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth,aggregate_report_stddev
+CC_PC_10_01_StudentLaunchApplication ,3768,1283,1276,1427,758,14702,0.00%,1.9,3224.9,283.44
+CC_PC_10_04_LogoutApplication,3729,284,249,421,126,15131,0.00%,1.9,1489.2,319.61
+CC_PC_04_02_Studloginwithcredentials,1290,2113,2089,2325,1299,5262,0.00%,.7,1123.7,280.16
+CC_PC_04_04_StudLogoutApplication,1275,82,76,98,56,2804,0.00%,.7,3.6,78.32
+CC_PC_08_02_Loginwithvalidcredentials,858,2173,2168,2404,1410,5180,0.00%,.4,767.3,253.91
+CC_PC_08_05_LogoutApplication,850,86,76,98,58,3432,0.00%,.4,2.5,131.15
+CC_PC_09_02_Loginwithvalidcredentials,849,2031,2027,2208,1293,6328,0.00%,.4,766.4,257.55
+SSO9_2_InstLoginApplication ,595,1088,860,1200,579,6916,0.00%,.3,230.2,970.50
+CC_PC_09_05_LogoutApplication,842,81,77,98,58,873,0.00%,.4,2.4,31.22
+SSO3_2_InstrLoginApplication ,514,1118,835,1299,0,6308,0.78%,.3,197.0,1070.12
+SSO9_7_InstLogoutApplication ,585,76,73,95,52,252,0.00%,.3,2.2,17.15
+SSO3_6_InstrLogOut ,502,85,72,99,52,2737,0.00%,.3,1.9,127.86
+SSO4_2_InstrLoginApplication ,502,1247,951,1455,0,7130,0.40%,.3,200.6,1055.05
+SSO4_4_InstrLogOut ,495,81,73,98,54,1307,0.00%,.3,1.8,63.50
+SSO2_2_InstrLoginApplication ,170,1318,991,1607,758,6839,0.00%,.1,70.8,1144.22
+SSO2_6_InstrLogOut ,169,86,73,111,51,1111,0.00%,.1,.7,83.95
+TOTAL,16993,863,674,2080,0,15131,0.04%,8.6,7957.6,856.81
