@@ -119,11 +119,18 @@
 				pattern = name+"_(.+)";
 				Pattern patternComplier = Pattern.compile(pattern);
 				Matcher patternMatcher = patternComplier.matcher(fileName);
-				Float testDurationInHour=0.0f;
 				if(patternMatcher.find())
 				{
 					testValue = patternMatcher.group(1);
-					testDurationInHour = Float.parseFloat(testValue)/3600;
+					Float testDurationInHour = Float.parseFloat(Math.floor(Float.parseFloat(testValue)/3600));
+					%>
+					<pre>
+					<h1>
+					<%=testValue%>
+					<%=testDurationInHour%>
+					</h1>
+					</pre>
+					<%
 					Float testDurationLeftInSec = Float.parseFloat(testValue)%3600;
 					Float testDurationInMinute = testDurationLeftInSec/60;
 					testTime = String.format("%.00f",testDurationInHour) + " Hr, " + String.format("%.00f",testDurationInMinute) + "Min";

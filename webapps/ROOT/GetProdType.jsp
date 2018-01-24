@@ -27,9 +27,9 @@
 		<%
 		        String[] tempTestNumList2;
 				String tempTestNum2="";
-				File[] listOfCurrentFoldersAggregate      = new File(currDir+"\\"+currLoadTestNumber+"_"+currLoadTestDuration+"\\AggregateReport").listFiles();
+				File[] listOfCurrentFoldersAggregate      = new File(currDir+"/"+currLoadTestNumber+"_"+currLoadTestDuration+"/AggregateReport").listFiles();
 				Arrays.sort(listOfCurrentFoldersAggregate);
-				File[] listOfBaselineFoldersAggregate      = new File(currDir+"\\"+baselineLoadTestNumber+"_"+currLoadTestDuration+"\\AggregateReport").listFiles();
+				File[] listOfBaselineFoldersAggregate      = new File(currDir+"/"+baselineLoadTestNumber+"_"+currLoadTestDuration+"/AggregateReport").listFiles();
 				Arrays.sort(listOfBaselineFoldersAggregate);
 				Set<File> hs1 = new TreeSet<>(Arrays.asList(listOfCurrentFoldersAggregate));
 				Set<File> hs2 = new TreeSet<>(Arrays.asList(listOfBaselineFoldersAggregate));

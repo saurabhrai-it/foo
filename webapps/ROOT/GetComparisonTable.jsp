@@ -278,8 +278,8 @@
 				{
 					String currTransactionData = currTransactionName.get(tempFile);
 					String baseTransactionData = baseTransactionName.get(tempFile);
-					currTransactionDataArray = currTransactionData.split("\\*");
-					baseTransactionDataArray = baseTransactionData.split("\\*");
+					currTransactionDataArray = currTransactionData.split("/*");
+					baseTransactionDataArray = baseTransactionData.split("/*");
 					responseTimeBaseline = baseTransactionDataArray[1];
 					sampleBaseline = baseTransactionDataArray[0];
 					errorBaseline = baseTransactionDataArray[2];
@@ -308,7 +308,7 @@
 				if(baseTransactionName.keySet().toString().contains(tempFile)&&!currTransactionName.keySet().toString().contains(tempFile))
 				{
 					String baseTransactionData = baseTransactionName.get(tempFile);
-					baseTransactionDataArray = baseTransactionData.split("\\*");
+					baseTransactionDataArray = baseTransactionData.split("/*");
 					responseTimeBaseline = baseTransactionDataArray[1];
 					sampleBaseline = baseTransactionDataArray[0];
 					errorBaseline = baseTransactionDataArray[2];
@@ -337,7 +337,7 @@
 				if(!baseTransactionName.keySet().toString().contains(tempFile)&&currTransactionName.keySet().toString().contains(tempFile))
 				{
 					String currTransactionData = currTransactionName.get(tempFile);
-					currTransactionDataArray = currTransactionData.split("\\*");
+					currTransactionDataArray = currTransactionData.split("/*");
 					responseTimeBaseline = "-";
 					sampleBaseline = "-";
 					errorBaseline = "-";
